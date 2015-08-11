@@ -1,0 +1,4 @@
+.DS_Store
+adp.config.json
+screenshots/*
+steps/holidays.*.json

@@ -1,0 +1,18 @@
+{
+    
+    "username" : "YOUR_USERNAME_IN_ADP", 
+    "password" : "YOUR_PASSWORD_IN_ADP",
+
+    "address" : "https://portal.adp.com/wps/employee/employee.jsp",
+
+    
+    "defaultWeek" : { 
+        "hours" : 8,
+        "code": "REGULAR",
+        "holidaycode": "HOLIDAY",
+        "customer": "YOUR-CUSTOMER-INADP",
+        "project": "YOUR-PROJECT-INADP"
+    },
+
+    "saveStepsScreenshots" : false
+}
