@@ -5,7 +5,8 @@ casper.getHolidays = function ( ) {
 
     if( fs.exists( holidaysFile ) ){
 
-        holidays = fs.read(holidaysFile);
+        console.log('holidays loaded from cache');
+        config.holidays = fs.read(holidaysFile);
 
     } else {
 
@@ -26,7 +27,7 @@ casper.getHolidays = function ( ) {
                         ('0' + result[i].dia).substr(-2) );
                 data.push( day );
             };
-            holidays =  JSON.stringify( data );
+            config.holidays =  JSON.stringify( data );
             console.log('holidays loaded from web service');
 
             fs.write( holidaysFile, holidays , 'w');
