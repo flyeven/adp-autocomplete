@@ -5,7 +5,7 @@ var casper = require('casper').create({
     logLevel: 'info'
 });
 
-var config = require('adp.config.json');
+var config = require('./adp.config.json');
 var now = (new Date()).toJSON().replace(/[:\-\.]/g,"").substr(0,15);
 
 var utils = require('utils');
